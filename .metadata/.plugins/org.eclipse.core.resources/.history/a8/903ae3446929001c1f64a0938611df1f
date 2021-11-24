@@ -1,0 +1,73 @@
+// Creator: Jordan Petersen
+// Last modified: 10/9/21
+
+// I had imports here but didn't end up needing them.. so I removed them.
+
+class ItemToPurchase {
+	
+	// declare variables, privates are not accessible outside of ItemToPurchase
+	private String itemDescription;
+	private String name;
+	private double itemPrice;
+	private int itemQuantity;
+	
+	// create a default constructor for ItemsToPurchase
+	public ItemToPurchase() {
+		itemDescription = "none";
+		itemQuantity = 0;
+		itemPrice = 0;
+		name = "";
+	}
+
+	public ItemToPurchase(String name, String description, double price,
+			int itemQuantity) {// putting this on a second line so that I can see.
+		this.itemDescription = description;
+		this.name = name;
+		this.itemPrice = price;
+		this.itemQuantity = itemQuantity;
+
+	}
+
+	public String getDescription() {
+		return itemDescription;
+	}
+
+	public void setDescription(String itemDescription) {
+		this.itemDescription = itemDescription;
+	}
+
+	public void printCost() {
+		System.out.println(name + " " + itemQuantity + " @ " + itemPrice
+				+ " = $" + (itemQuantity * itemPrice));
+	}
+
+	public void printDescription() {
+		System.out.println(name + " " + itemDescription);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return itemPrice;
+	}
+
+	public void setPrice(double itemPrie) {
+		this.itemPrice = itemPrie;
+	}
+
+	public int getQuantity() {
+		return itemQuantity;
+	}
+
+	public void setQuantity(int itemQuantity) {
+		this.itemQuantity = itemQuantity;
+
+	}
+
+}

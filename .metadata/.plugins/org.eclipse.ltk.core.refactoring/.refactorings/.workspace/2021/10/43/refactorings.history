@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;exceptionsChallenge&apos;" deleteContents="false" description="Delete resource &apos;exceptionsChallenge&apos;" element1="/exceptionsChallenge" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634856523579"/>&#x0A;<refactoring comment="Delete resource &apos;exceptionsChallenge/src/exceptionsChallenge.java&apos;" deleteContents="false" description="Delete resource &apos;exceptionsChallenge/src/exceptionsChallenge.java&apos;" element1="/exceptionsChallenge/src/exceptionsChallenge.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634856776860"/>
+</session>

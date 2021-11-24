@@ -1,0 +1,19 @@
+public class Triangle{
+	
+	private float base;
+	private float height;
+	
+	public Triangle(){	
+		base = 0;
+		height = 0;
+	}
+	
+	
+	
+	public Triangle(float base, float height) {
+		this.base = base;
+		this.height;
+		
+	}
+	
+}

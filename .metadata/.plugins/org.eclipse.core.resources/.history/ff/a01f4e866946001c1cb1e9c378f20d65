@@ -1,0 +1,12 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class test4 {
+
+	@Test
+	public void test() {
+		BinaryNumber binaryNumber = new BinaryNumber(4);
+	}
+
+}

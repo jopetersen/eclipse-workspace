@@ -1,0 +1,20 @@
+
+
+import java.util.Scanner;
+
+public class BinaryNumber {
+    
+    public static void main(String[] args) {
+        
+//        System.out.println("this text is working");
+
+        // create a binary number constructor with a binary number of length length consisting only of zeros
+
+        
+        
+
+
+    }
+
+
+}

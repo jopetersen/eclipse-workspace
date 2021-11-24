@@ -1,0 +1,31 @@
+public class Triangle{
+	
+	private float base;
+	private float height;
+	
+	public Triangle(){	
+		base = 0;
+		height = 0;
+	}
+	
+	
+	
+	public Triangle(float base, float height) {
+		this.base = base;
+		this.height = height;	
+	}
+	
+	// with java you need to let it know the data type
+	// statically typed
+	
+	public float computeArea(float base, float height) {
+		
+		float area = (float)(0.5 * base * height);
+		return area;
+		
+	}
+	
+	
+	
+	
+}

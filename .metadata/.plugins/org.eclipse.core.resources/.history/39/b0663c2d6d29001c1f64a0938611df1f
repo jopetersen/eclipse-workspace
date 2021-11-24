@@ -1,0 +1,115 @@
+// Creator: Jordan Petersen
+// Last modified: 10/9/21
+
+
+// prompt the user for a customer's name and today's date. Output the name and date. 
+//Create an object of type ShoppingCart. (1 pt)
+/*(4) Implement the printMenu() method. printMenu() has a ShoppingCart parameter, and outputs a menu of options to manipulate the shopping cart. Each option is represented by a single character. Build and output the menu within the method.
+
+If the an invalid character is entered, continue to prompt for a valid choice. 
+Hint: Implement Quit before implementing other options. Call printMenu() in the main() method. 
+Continue to execute the menu until the user enters q to Quit. (3 pts)
+ * 
+ * 
+ */
+
+import java.util.Scanner;
+
+public class ShoppingCartManager {
+	public static void main(String[] args){
+		Scanner scnr = new Scanner(System.in);
+
+		// read in names/dates
+		System.out.println("Enter Customer's Name: ");
+		String customerName = scnr.nextLine();
+
+		System.out.println("Enter Today's Date: ");
+		String currentDate = scnr.nextLine();
+
+		// create a shpping cart, link the shoppingcart.java & create an object based on the shoppingcart class
+		ShoppingCart s = new ShoppingCart(customerName, currentDate);
+
+		// formatting then print name/date
+		System.out.println();
+		System.out.println("Customer Name: " + s.getCustomerName());
+		System.out.println("Today's Date: " + currentDate);
+
+		// print everything!
+		printMenu(s);
+
+	}
+
+	// create a method that prints what is currently in the shopping cart
+	public static void printMenu(ShoppingCart s) {
+
+		while (true) {
+
+			System.out.println("MENU\na - Add item to cart\nd - Remove item from cart\nc - Change item quantity\ni - Output items' descriptions\no - Output shopping cart\nq - Quit\n\nChoose an option: ");
+
+			// practicing naming objects different things, let's use scan
+			Scanner scan = new Scanner(System.in);
+			char ch = scan.next().charAt(0);
+			scan.nextLine();
+			
+			// let's make a tree! This is going to be the navigation piece.
+			if (ch == 'a' || ch == 'A') {
+				System.out.println("ADD ITEM TO CART");
+				System.out.println("Enter Item Name: ");
+				String name = scan.nextLine();
+
+				// get description
+				System.out.println("Enter Item Description: ");
+				String itemDescritpion = scan.nextLine();
+				
+				System.out.println("Enter Item Price: ");
+				int itemPrice = scan.nextInt();
+				
+				System.out.println("Enter Item Quantity: ");
+				int quantity = scan.nextInt();
+				
+				scan.nextLine();
+				
+				// create an object from the ItemToPurchase class
+				ItemToPurchase item = new ItemToPurchase(name, itemDescritpion,
+						itemPrice, quantity);
+				s.addItem(item);
+			}
+			else if (ch == 'd' || ch == 'D') {
+				System.out.println("REMOVE ITEM FROM CART");
+				System.out.println("Enter name of item to remove: ");
+				String name = scan.nextLine();
+				s.removeItem(name);
+			}
+
+			else if (ch == 'c' || ch == 'C') {
+				System.out.println("CHANGE ITEM QUANTITY");
+				System.out.println("Enter the item name: ");
+				String name = scan.nextLine();
+				System.out.println("Enter the new quantity: ");
+				int quantity = scan.nextInt();
+				ItemToPurchase item = new ItemToPurchase();
+				item.setName(name);
+				item.setQuantity(quantity);
+				s.modifyItem(item);
+			}
+
+			else if (ch == 'I' || ch == 'i') {
+				System.out.println("OUTPUT ITEMS' DESCRIPTIONS");
+				s.printDescriptions();
+			}
+
+			else if (ch == 'O' || ch == 'o') {
+				System.out.println("OUTPUT SHOPPING CART");
+				s.printTotal();
+			}
+
+			else if (ch == 'q' || ch == 'Q') {
+				break;
+			
+
+			}
+			
+				}
+		}
+
+}

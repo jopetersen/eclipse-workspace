@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+// written by: Jordan Petersen
+// Last modified on: 10/21/21
+
+// create an abstracted  offeredCourse class
+
+public class OfferedCourse extends Course {
+	Scanner scnr = new Scanner(System.in);
+
+	// declare private vars
+	
+	private String instructorName;
+	private String term;
+	private String classTime;
+	
+	// sets and gets.. again
+	
+	public String getInstructorName(String instructorName) {
+		return instructorName;
+	}
+	
+	public void setInstructorName(String instructorName) {
+		this.instructorName = instructorName;
+	}
+	
+	public String getTerm() {
+		return term;
+		
+	}
+	
+	public String getClassTime() {
+		return classTime;
+		
+		
+	}
+	
+	
+
+}

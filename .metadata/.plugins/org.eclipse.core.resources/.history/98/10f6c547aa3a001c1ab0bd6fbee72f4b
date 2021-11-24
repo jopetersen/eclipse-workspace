@@ -1,0 +1,24 @@
+/* 
+Author: Jordan Petersen
+Class: Data Structures
+Assignment: 1
+Last modified - 10/31/2021
+*/
+
+
+// this file's purpose: Define the binary number constructors
+import java.util.Scanner;
+
+class BinaryNumber{
+    
+    	// create an all 0 binary number constructor of length length
+        
+    	public BinaryNumber(int length) {
+    		
+    	}
+        
+
+
+    }
+
+

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+// written by: Jordan Petersen
+// Last modified on: 10/21/21
+public class CourseInformation {
+	
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+
+		//create Courses objects
+		Course myCourse = new Course();
+		
+		OfferedCourse myOfferedCourse = new OfferedCourse();
+		
+		
+		
+		scnr.close();
+	}
+	
+	
+	
+	
+}

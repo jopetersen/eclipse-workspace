@@ -1,0 +1,28 @@
+/* 
+Author: Jordan Petersen
+Class: Data Structures
+Assignment: 1
+Last modified - 10/31/2021
+*/
+
+
+// main will live here
+
+public class BinaryMainHW1 {
+
+	public static void main(String[] args) {
+
+		// TODO - implement math
+		
+		
+		
+			
+	}
+	
+	// 
+	public void add(BinaryNumber aBinaryNumber) {
+		
+		
+	}
+
+}

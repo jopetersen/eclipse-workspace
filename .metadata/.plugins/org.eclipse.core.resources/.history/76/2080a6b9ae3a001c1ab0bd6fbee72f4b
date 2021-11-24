@@ -1,0 +1,70 @@
+/* 
+Author: Jordan Petersen
+Class: Data Structures
+Assignment: 1
+Last modified - 10/31/2021
+*/
+
+
+// this file's purpose: Define the binary number constructors
+
+
+class BinaryNumber{
+	
+	// steps taken - 
+	// create a private array for data
+		private int data[];
+    
+    	// create an all 0 binary number constructor of length length
+        
+    	public BinaryNumber(int length) {
+    		
+    		if (length.hasNextInt()) {
+    			System.out.println("Invalid length");
+    			
+    		}
+    		
+    		// write a loop to add 0s until appropriate length is reached
+    		for (int i=0; i<length; i++) {
+    			
+    			// 
+    			
+    			
+    		}
+    		
+    	}
+        
+    // create an overloaded constructor taking a string
+    	
+    	public BinaryNumber(String str){
+    	// 	TODO might need to use 
+    		//char java.lang.String.charAt(int index);
+    		// int java.lang.Character.getNumericValue(char ch)
+    		// returns int value that unicode represents
+    		
+    	}
+
+    	
+    	
+    	//TODO - fix this
+    	//int getLength();
+    	
+    	// create a getDigit function for getting the digit of a binary number given an index
+    	// if an index is out of bounds then a message should print that it is
+    	
+    	//int getDigit(int index) {
+    		
+    	//}
+    	
+    	// transform binary number to decimal notation
+    	int toDecimal();
+    	
+    	// shifts all dgitis in a binary number to AMOUNT number of places to the right
+    	void shiftR(int amount) {
+    		
+    		
+    	}
+
+    }
+
+

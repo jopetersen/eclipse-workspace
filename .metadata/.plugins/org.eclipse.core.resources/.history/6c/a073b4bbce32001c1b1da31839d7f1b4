@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+// written by: Jordan Petersen
+// Last modified on: 10/21/21
+
+// create an abstracted  offeredCourse class
+
+public class OfferedCourse extends Course {
+	Scanner scnr = new Scanner(System.in);
+
+	
+	
+	
+	
+	
+
+}

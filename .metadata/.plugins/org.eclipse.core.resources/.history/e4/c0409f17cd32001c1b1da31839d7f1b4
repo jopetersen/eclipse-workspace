@@ -1,0 +1,27 @@
+// written by: Jordan Petersen
+// Last modified on: 10/21/21
+import java.util.Scanner;
+public class Course {
+	Scanner scnr = new Scanner(System.in);
+
+	protected String name;
+	protected String address;
+	void setName(String name) {
+		name = name;
+		
+	}
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		//
+		
+		System.out.println();
+		
+		
+		
+	}
+
+}

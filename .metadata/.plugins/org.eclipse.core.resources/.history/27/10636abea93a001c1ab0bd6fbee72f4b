@@ -1,0 +1,27 @@
+/* 
+Author: Jordan Petersen
+Class: Data Structures
+Assignment: 1
+Last modified - 10/31/2021
+*/
+
+
+// 
+import java.util.Scanner;
+
+public class BinaryNumber {
+    
+    public static void main(String[] args) {
+        
+//        System.out.println("this text is working");
+
+        // create a binary number constructor with a binary number of length length consisting only of zeros
+
+        
+        
+
+
+    }
+
+
+}

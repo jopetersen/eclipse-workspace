@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class test4 {
+
+	@Test
+	public void test() {
+		BinaryNumber a = new BinaryNumber(4); // should be [0, 0, 0, 0]
+		assertEquals(a.getLength(), 4);
+	} // assert  
+
+}

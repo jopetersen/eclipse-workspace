@@ -1,0 +1,10 @@
+Scanner scanner = new Scanner(new File("input.txt"));
+
+public class Class28 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

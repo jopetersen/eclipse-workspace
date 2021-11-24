@@ -1,0 +1,81 @@
+// Creator: Jordan Petersen
+// Last modified: 10/9/21
+
+// I had imports here but didn't end up needing them.. so I removed them.
+
+class ItemToPurchase {
+	
+	// declare variables, privates are not accessible outside of ItemToPurchase
+	private String itemDescription;
+	private String name;
+	private double itemPrice;
+	private int itemQuantity;
+	
+	// create a default constructor for ItemsToPurchase
+	public ItemToPurchase() {
+		itemDescription = "none";
+		itemQuantity = 0;
+		itemPrice = 0;
+		name = "";
+	}
+
+	// make sure to use a double for price since we want $xy.ab
+	
+	// create a constructor to overload the instance
+	public ItemToPurchase(String name, String description, double price,
+			int itemQuantity) {// putting this on a second line so that I can see.
+		this.itemDescription = description;
+		this.name = name;
+		this.itemPrice = price;
+		this.itemQuantity = itemQuantity;
+	}
+
+	// if someone asks us to get the description, we want to return the private info, so use return.
+	public String getDescription() {
+		return itemDescription;
+	}
+
+	// not returning description so we don't use void
+	public void setDescription(String itemDescription) {
+		this.itemDescription = itemDescription;
+	}
+
+	// create a method to print the cost of the item (given quantity/item price)
+	public void printCost() {
+		System.out.println(name + " " + itemQuantity + " @ " + itemPrice
+				+ " = $" + (itemQuantity * itemPrice));
+	}
+
+	//print the description, like a slightly different method that I defined further up
+	public void printDescription() {
+		System.out.println(name + " " + itemDescription);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		
+		// this gives me a warning unless I use this. - need to be explicit
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return itemPrice;
+	}
+
+	public void setPrice(double itemPrie) {
+		this.itemPrice = itemPrie;
+	}
+
+	public int getQuantity() {
+		return itemQuantity;
+	}
+
+	public void setQuantity(int itemQuantity) {
+		this.itemQuantity = itemQuantity;
+
+	}
+
+}

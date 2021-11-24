@@ -1,0 +1,23 @@
+/* Written by Jordan Petersen
+ * Programming assignment 3
+ * Last edited: 10/2/2021
+ */
+
+// get scanner, we'll need it at some point
+import java.util.Scanner;
+
+
+
+public class ProgrammingAssignment3 {
+
+	public static void main (String [] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		/*
+		 * 
+		 * 
+		 */
+	
+	
+	}	
+}

@@ -1,0 +1,13 @@
+#TODO
+Implement UML:
+
+private int data[] private
+boolean overflow
+public BinaryNumber(int length)
+public BinaryNumber(String str)
+public int getLength() public int
+getDigit(int index) public void
+shiftR(int amount)
+public void add(BinaryNumber aBinaryNumber)
+public String toString() public int toDecimal()
+public void clearOverflow()

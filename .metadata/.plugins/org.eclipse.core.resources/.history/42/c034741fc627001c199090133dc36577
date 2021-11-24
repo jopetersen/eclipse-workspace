@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Launcher {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		char option;			//user's selection from the menu
+		
+		while (true) {
+			option = getInput(scnr);
+			compute(option, scnr);
+		}
+
+	} //end main
+	
+	//prompt the user to choose a shape
+	public static char getInput(Scanner scnr) {	
+		
+		
+		System.out.println("Press c for circle\nPress r for rectangle\n\n");
+		System.out.print("Your choice: ");
+		
+		char opt = scnr.next().charAt(0);
+		
+		return opt;	
+	}
+	
+	//instantiate an object of the shape chosen and call the driver
+	public static void compute(char ch, Scanner scnr) {
+		
+		if (ch == 'c') {
+			Circle cir = new Circle();
+			cir.driver(scnr);			
+		}
+		else if (ch == 'r') {
+			Rectangle rec = new Rectangle();
+			rec.driver(scnr);
+		}
+	}
+	
+	
+
+}

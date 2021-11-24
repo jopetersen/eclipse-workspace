@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class ProgrammingAssignment3 {
+
+	public class main void (String [] args) {
+	Scanner scnr = new Scanner(System.in);
+
+	}	
+}

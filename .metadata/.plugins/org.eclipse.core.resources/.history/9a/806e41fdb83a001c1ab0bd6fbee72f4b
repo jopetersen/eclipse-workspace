@@ -1,0 +1,109 @@
+/* 
+Author: Jordan Petersen
+Class: Data Structures
+Assignment: 1
+Last modified - 10/31/2021
+*/
+
+
+// this file's purpose: Define the binary number constructors
+
+
+class BinaryNumber{
+	
+	// steps taken - 
+	// initialize data (array)and length (int)
+		private int data[];
+		private int length;
+
+		
+		// TODO exception handling
+    	
+    	public BinaryNumber(int length) throws Exception {	
+    		
+    		// initializing a data array using int
+    		// to create a new array, we need to use the new keyword
+    		// this essentially says "give me an array with length # of elements
+    		data = new int[length];
+    		
+    		this.length = length;
+    		
+    		// https://www.geeksforgeeks.org/arrays-in-java/ ref link in case future follow up needed
+    		// write a loop to add 0s until appropriate length is reached
+    		for (int i=0; i<length; i++) {
+    			// data[i] uses the index, 0 places the 0 value there
+    			data[i] = 0; 			
+    		}
+    		
+    	}
+        
+    // create an overloaded constructor taking a string & returns an int
+    	// so "1011" would return 1011
+    	
+    	public BinaryNumber(String str){
+    	
+    		// error check! make sure that this string is actually a binary number
+    			// if the value at every index is not either a 1 or a 0.. it's not binary
+    		
+    		// if a string does not contain a 0 or a 1 at any index.
+    		for (int i =0; i < str.length(); i++) {
+    			 
+    			if (str.charAt(i) != '0' || str.charAt(i) != '1') {
+    				
+    				// there is an error. 
+    				System.out.println("The string that you have entered is not a binary number.");
+    				
+    			}
+    				
+    		}
+    			
+    		
+    		
+    			
+    		// TODO - is this really necessary?
+    		// convert the integer to 
+    		int convertedBinaryString = Integer.parseInt(str);
+    	
+    	// get the length value & initialize an array at the proper length
+    	
+    		this.length = str.length();
+    		
+    	// mimic the method from the numeric case
+    		data = new int[length];
+    	
+    		// write a loop to add 0s until appropriate length is reached
+
+    		for (int i=0; i<length; i++) {
+    			// data[i] uses the index, 0 places the 0 value there
+    			data[i] = 0; 			
+    		}
+  
+    	
+    	
+    		
+    	}
+
+    	
+    	
+    	//TODO - fix this
+    	//int getLength();
+    	
+    	// create a getDigit function for getting the digit of a binary number given an index
+    	// if an index is out of bounds then a message should print that it is
+    	
+    	//int getDigit(int index) {
+    		
+    	//}
+    	
+    	// transform binary number to decimal notation
+    //	int toDecimal();
+    	
+    	// shifts all dgitis in a binary number to AMOUNT number of places to the right
+    	void shiftR(int amount) {
+    		
+    		
+    	}
+
+    }
+
+

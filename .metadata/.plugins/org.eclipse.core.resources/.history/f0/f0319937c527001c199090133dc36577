@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Triangle {
+	//variables
+	private float radius;
+	
+	//constructor - initialize variables
+	Triangle() {
+		radius = 0;
+	}
+	
+	public void driver(Scanner scnr) {
+		setRadius(scnr);
+		display(scnr);
+	}
+	
+	private void setRadius(Scanner scnr) {
+		System.out.print("Enter the radius value: ");
+		radius = scnr.nextFloat();
+	}
+	
+	private void display(Scanner scnr) {
+		System.out.println("The area of a circle with a radius of " + radius
+				+ " inches = " + Math.PI * radius * radius + " inches.");
+		
+	}
+
+}

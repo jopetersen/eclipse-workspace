@@ -1,0 +1,41 @@
+/* Written by Jordan Petersen
+ * Programming assignment 3
+ * Last edited: 10/2/2021
+ */
+
+// get scanner, we'll need it at some point
+import java.util.Scanner;
+
+
+
+public class ProgrammingAssignment3 {
+
+	public static void main (String [] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		/* Problem Statement: 
+		 * Write a program that takes in an integer in the range 11-100 as input. 
+		 * The output is a countdown starting from the integer and stopping when both 
+		 * output digits are identical.
+
+		 	*/
+		
+		// declare interger that a user inputs
+		
+		int  userVal;
+		
+
+		// get user input, which must be between 11 and 100
+		userVal = scnr.nextInt();
+		
+		// validate that input is > 100 or <= 100)
+		if (userVal > 11 && userVal <= 100) {
+			System.out.println(userVal);
+		} else {
+			System.out.print("Input must be 11-100");
+		}
+		
+	
+	
+	}	
+}

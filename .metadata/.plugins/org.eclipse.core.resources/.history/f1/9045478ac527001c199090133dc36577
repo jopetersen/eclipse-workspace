@@ -1,0 +1,28 @@
+public class Triangle{
+	
+	private float base;
+	private float height;
+	
+	public Triangle(){	
+		base = 0;
+		height = 0;
+	}
+	
+	
+	
+	public Triangle(float base, float height) {
+		this.base = base;
+		this.height = height;	
+	}
+	
+	public float computeArea() {
+		
+		float area = (float)(0.5 * base * height);
+		return area;
+		
+	}
+	
+	
+	
+	
+}

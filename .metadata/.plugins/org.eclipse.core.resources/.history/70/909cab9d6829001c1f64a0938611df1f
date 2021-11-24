@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class ItemToPurchase {
+
+	private String itemDescription;
+	private String name;
+	private double itemPrie;
+	private int itemQuantity;
+	public ItemToPurchase() {
+		itemDescription = "none";
+		itemQuantity = 0;
+		itemPrie = 0;
+		name = "";
+	}
+
+	public ItemToPurchase(String name, String description, double price,
+			int itemQuantity) {// putting this on a second line so that I can see.
+		this.itemDescription = description;
+		this.name = name;
+		this.itemPrie = price;
+		this.itemQuantity = itemQuantity;
+
+	}
+
+	public String getDescription() {
+		return itemDescription;
+	}
+
+	public void setDescription(String itemDescription) {
+		this.itemDescription = itemDescription;
+	}
+
+	public void printCost() {
+		System.out.println(name + " " + itemQuantity + " @ " + itemPrie
+				+ " = $" + (itemQuantity * itemPrie));
+	}
+
+	public void printDescription() {
+		System.out.println(name + " " + itemDescription);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return itemPrie;
+	}
+
+	public void setPrice(double itemPrie) {
+		this.itemPrie = itemPrie;
+	}
+
+	public int getQuantity() {
+		return itemQuantity;
+	}
+
+	public void setQuantity(int itemQuantity) {
+		this.itemQuantity = itemQuantity;
+
+	}
+
+}

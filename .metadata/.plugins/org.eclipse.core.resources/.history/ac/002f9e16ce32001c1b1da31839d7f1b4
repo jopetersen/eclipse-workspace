@@ -1,0 +1,14 @@
+// written by: Jordan Petersen
+// Last modified on: 10/21/21
+
+// create a course class that sets and gets the course details
+public class Course{
+	//declare coursenumber/title
+	
+	private String courseNumber, courseTitle;
+	
+	//sets and gets
+	
+	
+	
+}

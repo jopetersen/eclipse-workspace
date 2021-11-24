@@ -1,0 +1,7 @@
+Private fields
+string itemDescription - Initialized in default constructor to "none"
+Parameterized constructor to assign item name, item description, item price, and item quantity (default values of 0). (1 pt)
+Public member methods
+setDescription() mutator & getDescription() accessor (2 pts)
+printItemCost() - Outputs the item name followed by the quantity, price, and subtotal
+printItemDescription() - Outputs the item name and description
